@@ -1,0 +1,36 @@
+<%- include('../header.ejs' ,{title:"Sign in page"}); %>
+<h1>Sign in</h1>
+<div class="container-sm">
+
+  <label for="name">name</label>
+    <input name="name" id="name"type="text">
+  
+  <label for="pass" class="form-label">pass</label>
+    <input name="pass" id="pass" class="" type="password">
+    <button class="btn btn-primary"  id="myCheckbox">submit</button>
+</div>  
+
+
+<script >
+document.getElementById("myCheckbox").addEventListener("click",async function(event){
+  event.preventDefault()
+  let name = document.getElementById("name")
+  let pass = document.getElementById("pass")
+  const data={
+      name:name.value,
+      pass:pass.value
+    }
+  if(data.name&&data.pass)
+  fetch("/signIn", {
+  method: "POST",
+  body: JSON.stringify(data),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+})
+  console.log(data)
+});
+  
+  
+</script>
+<%- include('../footer.ejs' ); %>
