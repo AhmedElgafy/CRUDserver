@@ -1,14 +1,13 @@
 <%- include('../header.ejs' ,{title:"Sign in page"}); %>
-<h1 class="text-center">Sign in</h1>
+<h1 class="text-center">Sign Up</h1>
 <div class="container-sm">
   <label for="name">name</label>
   <input name="name" id="name" class="border rounded" type="text" />
 
   <label for="pass" class="form-label">pass</label>
   <input name="pass" id="pass" class="border rounded" type="password" />
-  <button class="btn btn-primary" id="myCheckbox">submit</button>
+  <button class="btn btn-primary" id="myCheckbox">Sign Up</button>
 </div>
-
 <script>
   document
     .getElementById("myCheckbox")
@@ -30,7 +29,7 @@
         }).then(() => {
           name.value = "";
           pass.value = "";
-          window.location.href = "/";
+          window.location.href = "/signIn";
         });
       console.log(data);
     });

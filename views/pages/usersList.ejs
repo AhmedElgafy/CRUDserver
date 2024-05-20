@@ -1,0 +1,15 @@
+<%- include('../header',{title:"users"}) %>
+<div class="container-sm">
+  <h1>Users</h1>
+  <ul class="list-group">
+    <% usersList.forEach((user,index) => { %>
+    <li class="list-group-item">
+      <div class="row">
+        <p class="col"><%=index+1 %></p>
+        <p class="col"><%=user.name %></p>
+      </div>
+    </li>
+    <% }) %>
+  </ul>
+</div>
+<%- include('../footer') %>

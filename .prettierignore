@@ -1,2 +1,4 @@
 # Ignore all HTML files:
-*.ejs 
+# *.ejs 
+header.ejs
+footer.ejs

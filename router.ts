@@ -12,7 +12,8 @@ let users: User[] = [
 
 //                          READ
 routes.get("/", (req: Request, res: Response) => {
-  res.redirect("/signIn");
+  // res.redirect("/signIn");
+  res.render("pages/main.ejs", { title: "welcome" });
   // res.send(JSON.stringify(users));
 });
 
