@@ -1,7 +1,7 @@
 import { randomUUID } from "crypto";
 import express, { Request, Response } from "express";
 export const routes = express.Router();
-interface User {
+export interface User {
   id: string;
   name: string;
   pass: string;

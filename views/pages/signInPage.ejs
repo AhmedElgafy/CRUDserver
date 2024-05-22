@@ -21,7 +21,7 @@
         pass: pass.value,
       };
       if (data.name && data.pass)
-        fetch("/signIn", {
+        fetch("/logIn", {
           method: "POST",
           body: JSON.stringify(data),
           headers: {
@@ -30,7 +30,7 @@
         }).then(() => {
           name.value = "";
           pass.value = "";
-          window.location.href = "/";
+          // window.location.href = "/";
         });
       console.log(data);
     });

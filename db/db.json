@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": "default id",
+      "name": "default name",
+      "pass": "default pass"
+    },
+    {
+      "id": "e9d6806a-b9e9-47ea-b5bd-f2d39ae6ace4",
+      "name": "ahmed samir",
+      "pass": "$2b$10$1AnPcAb.YG./peEdZAOG8uhLH6YpjqfiZGMcTp9K2F8d6Ff8exew."
+    },
+    {
+      "id": "e46ff606-801b-47fc-a1d1-2ba4a4f24498",
+      "name": "afasdgsdf",
+      "pass": "$2b$10$T2a4AVLjL8oDhioBLgkDYetJbC4cV1kDYHfAOxoQDqTnzMxx2yIKW"
+    }
+  ]
+}
